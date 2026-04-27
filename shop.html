@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | L-BUY</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<h1>Shop All Products 💕</h1>
+
+<!-- 🛒 CART ICON -->
+<div class="cart-icon" onclick="window.location.href='cart.html'">
+    🛒 <span id="count">0</span>
+</div>
+
+<div class="product-container">
+
+    <div class="product-card">
+        <img src="images/pink dress.jpg">
+        <p>Pink Dress</p>
+        <p>₦5000</p>
+        <button onclick="addToCart('Pink Dress', 5000, 'images/dress.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/pink bag.jpg">
+        <p>Luxury Bag</p>
+        <p>₦10000</p>
+        <button onclick="addToCart('Luxury Bag', 10000, 'images/bag.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/heels.jpg">
+        <p>Heels</p>
+        <p>₦4000</p>
+        <button onclick="addToCart('Heels', 4000, 'images/heels.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+     <div class="product-card">
+        <img src="images/wig.avif">
+        <p>Wig</p>
+        <p>₦25000</p>
+        <button onclick="addToCart('Wig', 25000, 'images/wig.avif')">
+            Add to Cart
+        </button>
+    </div>
+
+     <div class="product-card">
+        <img src="images/bracelet.jfif">
+        <p>Bracelet</p>
+        <p>₦1000</p>
+        <button onclick="addToCart('Bracelet', 1000, 'images/bracelet.jfif')">
+            Add to Cart
+        </button>
+    </div>
+
+     <div class="product-card">
+        <img src="images/necklace.jpg">
+        <p>Necklace</p>
+        <p>₦5000</p>
+        <button onclick="addToCart('Necklace', 5000, 'images/necklace.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+    
+
+    <!-- Add more products here -->
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

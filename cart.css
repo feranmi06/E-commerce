@@ -1,0 +1,28 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #fff0f5;
+}
+
+h1 {
+    text-align: center;
+    color: #ff4d88;
+}
+
+.cart-item {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background: #ff4d88;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}

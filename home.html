@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L-BUY | Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<!-- 🔝 NAVBAR -->
+<header class="navbar">
+    <h2>L-BUY 💕</h2>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- 🎞️ IMAGE SLIDER -->
+<section class="slider">
+    <img src="images/first.jpeg" class="slide active">
+    <img src="images/second.jpeg" class="slide">
+    <img src="images/third.jpeg" class="slide">
+</section>
+
+<!-- 🌸 HERO TEXT -->
+<section class="hero-text">
+    <h1>Stylish Fashion for Every Lady 💕</h1>
+    <button onclick="goShop()">Shop Now</button>
+</section>
+
+
+
+    <section class="products" id="products">
+    <h2>Trending Now</h2>
+
+    <!-- 🛒 CART ICON -->
+    <div class="cart-icon" onclick="window.location.href='cart.html'">
+        🛒 <span id="cart-count">0</span>
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="images/pink dress.jpg">
+            <p>Pink Dress</p>
+            <button onclick="addToCart('Pink Dress')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/pink bag.jpg">
+            <p>Luxury Bag</p>
+            <button onclick="addToCart('Luxury Bag')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/heels.jpg">
+            <p>Heels</p>
+            <button onclick="addToCart('Heels')">Add to Cart</button>
+            
+        </div>
+        <div class="product-card">
+            <img src="images/wig.avif">
+            <p>Wig</p>
+            <button onclick="addToCart('Wig')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/4 bracelet.jpg">
+            <p>Bracelet</p>
+            <button onclick="addToCart('Bracelet')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/necklace.jpg">
+            <p>Necklace</p>
+            <button onclick="addToCart('Necklace')">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
