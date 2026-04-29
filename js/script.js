@@ -64,4 +64,25 @@ window.onload = function () {
     updateCount();
 };
 
+// --- API integration examples ---
+async function fetchProductsFromApi() {
+    try {
+        const res = await fetch('/api/products/');
+        const data = await res.json();
+        console.log('Products from API:', data);
+        // Example: render into #products container (left as exercise)
+    } catch (err) {
+        console.error('Failed to fetch products', err);
+    }
+}
 
+async function apiAddToCart(productId, quantity = 1) {
+    await fetch('/api/cart/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'add', product_id: productId, quantity })
+    });
+}
+
+// call fetchProductsFromApi() on pages that should use dynamic products
+// fetchProductsFromApi();
